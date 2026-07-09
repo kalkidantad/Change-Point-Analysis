@@ -133,6 +133,7 @@ jupyter notebook notebooks/02_change_point_model.ipynb
 ### Run the dashboard
 
 ```bash
+# Change-Point-Analysis
 # Terminal 1 — Flask API
 source venv/bin/activate
 python -m backend.app
