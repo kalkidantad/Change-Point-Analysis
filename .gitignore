@@ -57,5 +57,11 @@ frontend/dist/
 credentials.json
 
 # Model outputs
-outputs/
-figures/
+outputs/*
+!outputs/*.json
+!outputs/*.csv
+figures/*
+!figures/01_*.png
+!figures/02_*.png
+!figures/03_*.png
+!figures/cp_*.png

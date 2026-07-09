@@ -26,16 +26,21 @@ This project analyzes how major political and economic events affect Brent oil p
 ├── docs/
 │   ├── analysis_workflow.md        # Task 1: Planned analysis steps
 │   └── assumptions_and_limitations.md
+├── figures/                        # EDA and posterior visualizations
 ├── notebooks/
 │   ├── 01_eda.ipynb                # Task 1: Initial EDA
-│   └── 02_change_point_model.ipynb # Task 2: PyMC modeling (TODO)
+│   └── 02_change_point_model.ipynb # Task 2: PyMC modeling
+├── outputs/                        # Model results (JSON/CSV)
 ├── scripts/
-│   └── download_data.py            # Data download utility
+│   ├── download_data.py            # Data download utility
+│   └── run_change_point_analysis.py
 ├── src/
 │   ├── data_loader.py              # Data loading utilities
-│   └── analysis.py                 # Time series analysis helpers
+│   ├── analysis.py                 # Time series analysis helpers
+│   └── change_point_model.py       # PyMC change point model
 ├── tests/
-│   └── test_data_loader.py
+│   ├── test_data_loader.py
+│   └── test_change_point_model.py
 └── requirements.txt
 ```
 
@@ -43,14 +48,34 @@ This project analyzes how major political and economic events affect Brent oil p
 
 ## Quick Start
 
+### 1. Clone and set up environment
+
 ```bash
 git clone <your-repo-url>
 cd Change-Point-Analysis
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate        # Linux/Mac
+# venv\Scripts\activate         # Windows
 pip install -r requirements.txt
+```
+
+### 2. Run tests
+
+```bash
 pytest tests/ -v
+```
+
+### 3. Run EDA notebook
+
+```bash
 jupyter notebook notebooks/01_eda.ipynb
+```
+
+### 4. Run change point analysis
+
+```bash
+python scripts/run_change_point_analysis.py
+jupyter notebook notebooks/02_change_point_model.ipynb
 ```
 
 ---
@@ -74,10 +99,33 @@ jupyter notebook notebooks/01_eda.ipynb
 
 ---
 
-## Upcoming Tasks
+## Task 2 — Change Point Modeling (Complete)
 
-- [ ] **Task 2:** Bayesian change point modeling with PyMC
-- [ ] **Task 3:** Flask API + React interactive dashboard
+| Deliverable | Location |
+|-------------|----------|
+| PyMC change point notebook | [`notebooks/02_change_point_model.ipynb`](notebooks/02_change_point_model.ipynb) |
+| Model utilities | [`src/change_point_model.py`](src/change_point_model.py) |
+| Analysis script | [`scripts/run_change_point_analysis.py`](scripts/run_change_point_analysis.py) |
+| Exported results (JSON/CSV) | [`outputs/`](outputs/) |
+| Posterior visualizations | [`figures/cp_*.png`](figures/) |
+
+### Key Findings
+
+| Period | Change Point | Price Impact | Nearest Event |
+|--------|-------------|--------------|---------------|
+| COVID 2020 | 2020-04-21 | $45 → $40 (−10%) | OPEC+ cuts (9 days) |
+| Financial Crisis | 2008-12-10 | $100 → $50 (−50%) | Lehman collapse (86 days) |
+| Ukraine War | 2022-04-21 | $102 → $107 (+6%) | OPEC+ decision (21 days) |
+| Gulf War | 1990-10-05 | $24 → $27 (+9%) | Iraq invasion (64 days) |
+| OPEC Price War | 2016-01-19 | $66 → $41 (−39%) | Near market bottom |
+
+---
+
+## Task 3 (Final — 14 Jul 2026)
+
+- [ ] Flask API backend
+- [ ] React interactive dashboard
+- [ ] Screenshots and setup documentation
 
 ---
 
@@ -85,8 +133,16 @@ jupyter notebook notebooks/01_eda.ipynb
 
 | Dataset | Source |
 |---------|--------|
-| Brent Oil Prices | [EIA via datahub.io](https://datahub.io/core/oil-prices) |
+| Brent Oil Prices | [EIA via datahub.io](https://datahub.io/core/oil-prices) (DCOILBRENTEU / FRED) |
 | Market Events | Curated from historical records (OPEC, EIA, news archives) |
+
+---
+
+## References
+
+- [PyMC Change Point Examples](https://www.pymc.io/projects/examples/en/latest/)
+- [Change Point Detection Guide](https://forecastegy.com/posts/change-point-detection-time-series-python/)
+- [Bayesian Time Series Analysis](https://www.embecosm.com/2021/12/18/forget-arima-going-bayesian-with-time-series-analysis/)
 
 ---
 

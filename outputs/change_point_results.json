@@ -1,0 +1,452 @@
+[
+  {
+    "name": "covid_2020",
+    "n_observations": 255,
+    "start_date": "2020-01-02",
+    "end_date": "2020-12-31",
+    "convergence": {
+      "r_hat": {
+        "tau": "1.18",
+        "mu_1": "1.04",
+        "mu_2": "1.04",
+        "sigma": "1.01"
+      },
+      "ess_bulk": {
+        "tau": 32,
+        "mu_1": 38,
+        "mu_2": 47,
+        "sigma": 1002
+      }
+    },
+    "tau_summary": {
+      "tau_mode_index": 76,
+      "tau_median_index": 76,
+      "tau_mode_date": "2020-04-21",
+      "tau_median_date": "2020-04-21",
+      "tau_hdi_lower_index": 0,
+      "tau_hdi_upper_index": 84,
+      "tau_hdi_lower_date": "2020-01-02",
+      "tau_hdi_upper_date": "2020-05-01"
+    },
+    "impact_summary": {
+      "mu_1_mean": -0.019586381473832248,
+      "mu_2_mean": 0.006469832177686159,
+      "mu_diff_mean": 0.02605621365151841,
+      "prob_mu2_greater_mu1": 0.93775,
+      "approx_daily_pct_change": 2.632412290493901
+    },
+    "price_impact": {
+      "change_point_date": "2020-04-21",
+      "pre_period_mean_price": 45.11,
+      "post_period_mean_price": 40.42,
+      "price_pct_change": -10.41
+    },
+    "top_event_associations": [
+      {
+        "event_id": 13,
+        "event_name": "OPEC+ Historic Production Cuts",
+        "event_date": "2020-04-12 00:00:00",
+        "category": "OPEC",
+        "days_from_change_point": 9,
+        "within_hdi": true,
+        "within_window": true
+      },
+      {
+        "event_id": 12,
+        "event_name": "COVID-19 Declared Global Pandemic",
+        "event_date": "2020-03-11 00:00:00",
+        "category": "Economic",
+        "days_from_change_point": 41,
+        "within_hdi": true,
+        "within_window": true
+      },
+      {
+        "event_id": 11,
+        "event_name": "Saudi Aramco Abqaiq Attack",
+        "event_date": "2019-09-14 00:00:00",
+        "category": "Conflict",
+        "days_from_change_point": 220,
+        "within_hdi": false,
+        "within_window": false
+      },
+      {
+        "event_id": 14,
+        "event_name": "Russia Invades Ukraine",
+        "event_date": "2022-02-24 00:00:00",
+        "category": "Conflict",
+        "days_from_change_point": 674,
+        "within_hdi": false,
+        "within_window": false
+      },
+      {
+        "event_id": 15,
+        "event_name": "OPEC+ Modest Output Increase Post-Ukraine War",
+        "event_date": "2022-03-31 00:00:00",
+        "category": "OPEC",
+        "days_from_change_point": 709,
+        "within_hdi": false,
+        "within_window": false
+      }
+    ]
+  },
+  {
+    "name": "opec_price_war",
+    "n_observations": 530,
+    "start_date": "2014-06-02",
+    "end_date": "2016-06-30",
+    "convergence": {
+      "r_hat": {
+        "tau": "1.06",
+        "mu_1": "1.01",
+        "mu_2": "1.03",
+        "sigma": "1.01"
+      },
+      "ess_bulk": {
+        "tau": 29,
+        "mu_1": 269,
+        "mu_2": 53,
+        "sigma": 2046
+      }
+    },
+    "tau_summary": {
+      "tau_mode_index": 416,
+      "tau_median_index": 415,
+      "tau_mode_date": "2016-01-20",
+      "tau_median_date": "2016-01-19",
+      "tau_hdi_lower_index": 134,
+      "tau_hdi_upper_index": 510,
+      "tau_hdi_lower_date": "2014-12-10",
+      "tau_hdi_upper_date": "2016-06-03"
+    },
+    "impact_summary": {
+      "mu_1_mean": -0.0030310548813123907,
+      "mu_2_mean": 0.0025711955863735804,
+      "mu_diff_mean": 0.005602250467685971,
+      "prob_mu2_greater_mu1": 0.93525,
+      "approx_daily_pct_change": 0.5625865159170401
+    },
+    "price_impact": {
+      "change_point_date": "2016-01-19",
+      "pre_period_mean_price": 66.04,
+      "post_period_mean_price": 40.61,
+      "price_pct_change": -38.5
+    },
+    "top_event_associations": [
+      {
+        "event_id": 9,
+        "event_name": "OPEC+ Production Cut Agreement",
+        "event_date": "2016-09-28 00:00:00",
+        "category": "OPEC",
+        "days_from_change_point": 253,
+        "within_hdi": false,
+        "within_window": false
+      },
+      {
+        "event_id": 8,
+        "event_name": "OPEC Maintains Production (Price War)",
+        "event_date": "2014-11-27 00:00:00",
+        "category": "OPEC",
+        "days_from_change_point": 418,
+        "within_hdi": false,
+        "within_window": false
+      },
+      {
+        "event_id": 10,
+        "event_name": "US Withdrawal from Iran Nuclear Deal (JCPOA)",
+        "event_date": "2018-05-08 00:00:00",
+        "category": "Geopolitical",
+        "days_from_change_point": 840,
+        "within_hdi": false,
+        "within_window": false
+      },
+      {
+        "event_id": 11,
+        "event_name": "Saudi Aramco Abqaiq Attack",
+        "event_date": "2019-09-14 00:00:00",
+        "category": "Conflict",
+        "days_from_change_point": 1334,
+        "within_hdi": false,
+        "within_window": false
+      },
+      {
+        "event_id": 12,
+        "event_name": "COVID-19 Declared Global Pandemic",
+        "event_date": "2020-03-11 00:00:00",
+        "category": "Economic",
+        "days_from_change_point": 1513,
+        "within_hdi": false,
+        "within_window": false
+      }
+    ]
+  },
+  {
+    "name": "financial_crisis",
+    "n_observations": 377,
+    "start_date": "2008-01-02",
+    "end_date": "2009-06-30",
+    "convergence": {
+      "r_hat": {
+        "tau": "1.04",
+        "mu_1": "1.02",
+        "mu_2": "1.02",
+        "sigma": "1.00"
+      },
+      "ess_bulk": {
+        "tau": 47,
+        "mu_1": 99,
+        "mu_2": 120,
+        "sigma": 1966
+      }
+    },
+    "tau_summary": {
+      "tau_mode_index": 0,
+      "tau_median_index": 238,
+      "tau_mode_date": "2008-01-02",
+      "tau_median_date": "2008-12-10",
+      "tau_hdi_lower_index": 0,
+      "tau_hdi_upper_index": 330,
+      "tau_hdi_lower_date": "2008-01-02",
+      "tau_hdi_upper_date": "2009-04-24"
+    },
+    "impact_summary": {
+      "mu_1_mean": 0.0018214379856127758,
+      "mu_2_mean": 0.0015129231676651105,
+      "mu_diff_mean": -0.00030851481794766535,
+      "prob_mu2_greater_mu1": 0.61,
+      "approx_daily_pct_change": -0.03918493541978262
+    },
+    "price_impact": {
+      "change_point_date": "2008-12-10",
+      "pre_period_mean_price": 100.36,
+      "post_period_mean_price": 50.4,
+      "price_pct_change": -49.78
+    },
+    "top_event_associations": [
+      {
+        "event_id": 6,
+        "event_name": "Global Financial Crisis",
+        "event_date": "2008-09-15 00:00:00",
+        "category": "Economic",
+        "days_from_change_point": 86,
+        "within_hdi": true,
+        "within_window": false
+      },
+      {
+        "event_id": 5,
+        "event_name": "Oil Price Peak Pre-Financial Crisis",
+        "event_date": "2008-07-03 00:00:00",
+        "category": "Economic",
+        "days_from_change_point": 160,
+        "within_hdi": true,
+        "within_window": false
+      },
+      {
+        "event_id": 7,
+        "event_name": "Arab Spring / Libya Civil War",
+        "event_date": "2011-02-15 00:00:00",
+        "category": "Conflict",
+        "days_from_change_point": 797,
+        "within_hdi": false,
+        "within_window": false
+      },
+      {
+        "event_id": 4,
+        "event_name": "Iraq War Begins",
+        "event_date": "2003-03-20 00:00:00",
+        "category": "Conflict",
+        "days_from_change_point": 2092,
+        "within_hdi": false,
+        "within_window": false
+      },
+      {
+        "event_id": 8,
+        "event_name": "OPEC Maintains Production (Price War)",
+        "event_date": "2014-11-27 00:00:00",
+        "category": "OPEC",
+        "days_from_change_point": 2178,
+        "within_hdi": false,
+        "within_window": false
+      }
+    ]
+  },
+  {
+    "name": "ukraine_war",
+    "n_observations": 189,
+    "start_date": "2022-01-03",
+    "end_date": "2022-09-30",
+    "convergence": {
+      "r_hat": {
+        "tau": "1.01",
+        "mu_1": "1.00",
+        "mu_2": "1.00",
+        "sigma": "1.00"
+      },
+      "ess_bulk": {
+        "tau": 127,
+        "mu_1": 361,
+        "mu_2": 697,
+        "sigma": 1540
+      }
+    },
+    "tau_summary": {
+      "tau_mode_index": 45,
+      "tau_median_index": 76,
+      "tau_mode_date": "2022-03-07",
+      "tau_median_date": "2022-04-21",
+      "tau_hdi_lower_index": 0,
+      "tau_hdi_upper_index": 162,
+      "tau_hdi_lower_date": "2022-01-03",
+      "tau_hdi_upper_date": "2022-08-23"
+    },
+    "impact_summary": {
+      "mu_1_mean": 0.0059671465848598945,
+      "mu_2_mean": -0.0019026148213658527,
+      "mu_diff_mean": -0.007869761406225747,
+      "prob_mu2_greater_mu1": 0.11525,
+      "approx_daily_pct_change": -0.7835647812142499
+    },
+    "price_impact": {
+      "change_point_date": "2022-04-21",
+      "pre_period_mean_price": 101.53,
+      "post_period_mean_price": 107.38,
+      "price_pct_change": 5.76
+    },
+    "top_event_associations": [
+      {
+        "event_id": 15,
+        "event_name": "OPEC+ Modest Output Increase Post-Ukraine War",
+        "event_date": "2022-03-31 00:00:00",
+        "category": "OPEC",
+        "days_from_change_point": 21,
+        "within_hdi": true,
+        "within_window": true
+      },
+      {
+        "event_id": 14,
+        "event_name": "Russia Invades Ukraine",
+        "event_date": "2022-02-24 00:00:00",
+        "category": "Conflict",
+        "days_from_change_point": 56,
+        "within_hdi": true,
+        "within_window": true
+      },
+      {
+        "event_id": 13,
+        "event_name": "OPEC+ Historic Production Cuts",
+        "event_date": "2020-04-12 00:00:00",
+        "category": "OPEC",
+        "days_from_change_point": 739,
+        "within_hdi": false,
+        "within_window": false
+      },
+      {
+        "event_id": 12,
+        "event_name": "COVID-19 Declared Global Pandemic",
+        "event_date": "2020-03-11 00:00:00",
+        "category": "Economic",
+        "days_from_change_point": 771,
+        "within_hdi": false,
+        "within_window": false
+      },
+      {
+        "event_id": 11,
+        "event_name": "Saudi Aramco Abqaiq Attack",
+        "event_date": "2019-09-14 00:00:00",
+        "category": "Conflict",
+        "days_from_change_point": 950,
+        "within_hdi": false,
+        "within_window": false
+      }
+    ]
+  },
+  {
+    "name": "gulf_war_era",
+    "n_observations": 213,
+    "start_date": "1990-06-01",
+    "end_date": "1991-03-28",
+    "convergence": {
+      "r_hat": {
+        "tau": "1.00",
+        "mu_1": "1.00",
+        "mu_2": "1.00",
+        "sigma": "1.00"
+      },
+      "ess_bulk": {
+        "tau": 261,
+        "mu_1": 702,
+        "mu_2": 994,
+        "sigma": 1260
+      }
+    },
+    "tau_summary": {
+      "tau_mode_index": 85,
+      "tau_median_index": 90,
+      "tau_mode_date": "1990-09-28",
+      "tau_median_date": "1990-10-05",
+      "tau_hdi_lower_index": 0,
+      "tau_hdi_upper_index": 159,
+      "tau_hdi_lower_date": "1990-06-01",
+      "tau_hdi_upper_date": "1991-01-14"
+    },
+    "impact_summary": {
+      "mu_1_mean": 0.007279975378145249,
+      "mu_2_mean": -0.004807843396650602,
+      "mu_diff_mean": -0.012087818774795853,
+      "prob_mu2_greater_mu1": 0.116,
+      "approx_daily_pct_change": -1.2017931819960286
+    },
+    "price_impact": {
+      "change_point_date": "1990-10-05",
+      "pre_period_mean_price": 24.24,
+      "post_period_mean_price": 26.53,
+      "price_pct_change": 9.44
+    },
+    "top_event_associations": [
+      {
+        "event_id": 1,
+        "event_name": "Gulf War - Iraq invades Kuwait",
+        "event_date": "1990-08-02 00:00:00",
+        "category": "Conflict",
+        "days_from_change_point": 64,
+        "within_hdi": true,
+        "within_window": false
+      },
+      {
+        "event_id": 2,
+        "event_name": "Asian Financial Crisis",
+        "event_date": "1997-12-01 00:00:00",
+        "category": "Economic",
+        "days_from_change_point": 2614,
+        "within_hdi": false,
+        "within_window": false
+      },
+      {
+        "event_id": 3,
+        "event_name": "September 11 Terrorist Attacks",
+        "event_date": "2001-09-11 00:00:00",
+        "category": "Geopolitical",
+        "days_from_change_point": 3994,
+        "within_hdi": false,
+        "within_window": false
+      },
+      {
+        "event_id": 4,
+        "event_name": "Iraq War Begins",
+        "event_date": "2003-03-20 00:00:00",
+        "category": "Conflict",
+        "days_from_change_point": 4549,
+        "within_hdi": false,
+        "within_window": false
+      },
+      {
+        "event_id": 5,
+        "event_name": "Oil Price Peak Pre-Financial Crisis",
+        "event_date": "2008-07-03 00:00:00",
+        "category": "Economic",
+        "days_from_change_point": 6481,
+        "within_hdi": false,
+        "within_window": false
+      }
+    ]
+  }
+]

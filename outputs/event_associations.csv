@@ -1,0 +1,26 @@
+analysis,event_id,event_name,event_date,category,days_from_change_point,within_hdi,within_window
+covid_2020,13,OPEC+ Historic Production Cuts,2020-04-12,OPEC,9,True,True
+covid_2020,12,COVID-19 Declared Global Pandemic,2020-03-11,Economic,41,True,True
+covid_2020,11,Saudi Aramco Abqaiq Attack,2019-09-14,Conflict,220,False,False
+covid_2020,14,Russia Invades Ukraine,2022-02-24,Conflict,674,False,False
+covid_2020,15,OPEC+ Modest Output Increase Post-Ukraine War,2022-03-31,OPEC,709,False,False
+opec_price_war,9,OPEC+ Production Cut Agreement,2016-09-28,OPEC,253,False,False
+opec_price_war,8,OPEC Maintains Production (Price War),2014-11-27,OPEC,418,False,False
+opec_price_war,10,US Withdrawal from Iran Nuclear Deal (JCPOA),2018-05-08,Geopolitical,840,False,False
+opec_price_war,11,Saudi Aramco Abqaiq Attack,2019-09-14,Conflict,1334,False,False
+opec_price_war,12,COVID-19 Declared Global Pandemic,2020-03-11,Economic,1513,False,False
+financial_crisis,6,Global Financial Crisis,2008-09-15,Economic,86,True,False
+financial_crisis,5,Oil Price Peak Pre-Financial Crisis,2008-07-03,Economic,160,True,False
+financial_crisis,7,Arab Spring / Libya Civil War,2011-02-15,Conflict,797,False,False
+financial_crisis,4,Iraq War Begins,2003-03-20,Conflict,2092,False,False
+financial_crisis,8,OPEC Maintains Production (Price War),2014-11-27,OPEC,2178,False,False
+ukraine_war,15,OPEC+ Modest Output Increase Post-Ukraine War,2022-03-31,OPEC,21,True,True
+ukraine_war,14,Russia Invades Ukraine,2022-02-24,Conflict,56,True,True
+ukraine_war,13,OPEC+ Historic Production Cuts,2020-04-12,OPEC,739,False,False
+ukraine_war,12,COVID-19 Declared Global Pandemic,2020-03-11,Economic,771,False,False
+ukraine_war,11,Saudi Aramco Abqaiq Attack,2019-09-14,Conflict,950,False,False
+gulf_war_era,1,Gulf War - Iraq invades Kuwait,1990-08-02,Conflict,64,True,False
+gulf_war_era,2,Asian Financial Crisis,1997-12-01,Economic,2614,False,False
+gulf_war_era,3,September 11 Terrorist Attacks,2001-09-11,Geopolitical,3994,False,False
+gulf_war_era,4,Iraq War Begins,2003-03-20,Conflict,4549,False,False
+gulf_war_era,5,Oil Price Peak Pre-Financial Crisis,2008-07-03,Economic,6481,False,False
