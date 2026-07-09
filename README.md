@@ -95,3 +95,10 @@ jupyter notebook notebooks/01_eda.ipynb
 - **Slack:** #all-week10
 - **Office hours:** Mon–Fri, 08:00–15:00 UTC
 - **Tutors:** Kerod, Feven, Mahbubah
+# Change-Point-Analysis
+# Terminal 1 — Flask API
+source venv/bin/activate
+python -m backend.app
+
+# Terminal 2 — React frontend
+cd frontend && npm install && npm run dev
