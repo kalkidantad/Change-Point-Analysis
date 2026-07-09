@@ -1,0 +1,16 @@
+event_id,date,event_name,category,region,description,expected_price_impact
+1,1990-08-02,Gulf War - Iraq invades Kuwait,Conflict,Middle East,Iraq invaded Kuwait triggering UN sanctions and fears of supply disruption from the Persian Gulf. Oil prices surged over 100% within weeks.,Increase
+2,1997-12-01,Asian Financial Crisis,Economic,Asia,Currency collapses across Southeast Asia reduced regional oil demand and contributed to a broader commodity price decline through 1998.,Decrease
+3,2001-09-11,September 11 Terrorist Attacks,Geopolitical,Global,Terrorist attacks on the US caused immediate market panic. Prices spiked then fell as demand concerns dominated.,Mixed
+4,2003-03-20,Iraq War Begins,Conflict,Middle East,US-led coalition invaded Iraq raising concerns about Gulf supply disruptions and long-term instability in a major oil-producing region.,Increase
+5,2008-07-03,Oil Price Peak Pre-Financial Crisis,Economic,Global,Brent reached record highs near $147/barrel driven by demand growth from China and India before the global financial crisis.,Increase
+6,2008-09-15,Global Financial Crisis,Economic,Global,Lehman Brothers collapse triggered a global recession. Oil demand collapsed and Brent fell from ~$147 to below $40 within months.,Decrease
+7,2011-02-15,Arab Spring / Libya Civil War,Conflict,Middle East / North Africa,Anti-government uprisings across the Arab world and civil war in Libya removed ~1.5 million bpd of supply from the market.,Increase
+8,2014-11-27,OPEC Maintains Production (Price War),OPEC,Middle East,OPEC decided not to cut production despite oversupply aiming to defend market share against US shale. Prices fell from ~$110 to ~$50.,Decrease
+9,2016-09-28,OPEC+ Production Cut Agreement,OPEC,Global,OPEC and Russia agreed to cut production by 1.2 million bpd to rebalance the market after the 2014-2016 price collapse.,Increase
+10,2018-05-08,US Withdrawal from Iran Nuclear Deal (JCPOA),Geopolitical,Middle East,US reimposed sanctions on Iran restricting Iranian oil exports by an estimated 1-2 million bpd tightening global supply.,Increase
+11,2019-09-14,Saudi Aramco Abqaiq Attack,Conflict,Middle East,Drone attacks on Saudi Arabia's Abqaiq and Khurais facilities temporarily cut ~5.7 million bpd (~5% of global supply).,Increase
+12,2020-03-11,COVID-19 Declared Global Pandemic,Economic,Global,WHO declared COVID-19 a pandemic. Lockdowns devastated oil demand; Brent fell from ~$50 to below $20 in April 2020.,Decrease
+13,2020-04-12,OPEC+ Historic Production Cuts,OPEC,Global,OPEC+ agreed to cut 9.7 million bpd (~10% of global supply) the largest coordinated cut in history to offset COVID demand collapse.,Increase
+14,2022-02-24,Russia Invades Ukraine,Conflict,Europe / Global,Russia's invasion triggered sanctions fears supply disruptions and European energy security concerns. Brent exceeded $100 and peaked near $128.,Increase
+15,2022-03-31,OPEC+ Modest Output Increase Post-Ukraine War,OPEC,Global,OPEC+ announced a modest monthly production increase of 432000 bpd deemed insufficient by markets amid Ukraine war supply concerns.,Mixed
