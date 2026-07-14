@@ -121,11 +121,39 @@ jupyter notebook notebooks/02_change_point_model.ipynb
 
 ---
 
-## Task 3 (Final — 14 Jul 2026)
+## Task 3 — Interactive Dashboard (Complete)
 
-- [ ] Flask API backend
-- [ ] React interactive dashboard
-- [ ] Screenshots and setup documentation
+| Deliverable | Location |
+|-------------|----------|
+| Flask API backend | [`backend/`](backend/) |
+| React frontend | [`frontend/`](frontend/) |
+| API tests | [`tests/test_api.py`](tests/test_api.py) |
+| Dashboard screenshots | [`docs/screenshots/`](docs/screenshots/) |
+
+### Run the dashboard
+
+```bash
+# Change-Point-Analysis
+# Terminal 1 — Flask API
+source venv/bin/activate
+python -m backend.app
+
+# Terminal 2 — React frontend
+cd frontend && npm install && npm run dev
+```
+
+Open `http://localhost:3000`.
+
+### API Endpoints
+
+| Endpoint | Description |
+|----------|-------------|
+| `GET /api/prices` | Historical Brent prices (filter by `start`, `end`) |
+| `GET /api/events` | Curated market events |
+| `GET /api/change-points` | PyMC model results |
+| `GET /api/event-associations` | Event–change point mapping |
+| `GET /api/events/<id>/metrics` | Pre/post event impact metrics |
+| `GET /api/summary` | Dataset summary statistics |
 
 ---
 
